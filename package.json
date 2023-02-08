@@ -1,0 +1,20 @@
+{
+  "name": "cocktail-search",
+  "version": "1.0.0",
+  "description": "Initialiser un projet npm npm init -y\r Créer un commit et pousser sur github\r Avec une pull request sur github, faire une demande de merge de la branche develop vers main avec comme titre v0.0.0\r Envoyer le lien de pull request à votre formateur, si il approuve vous pouvez la merger et continuer l'exercice !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KAOUTARBAH/cocktail-search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KAOUTARBAH/cocktail-search/issues"
+  },
+  "homepage": "https://github.com/KAOUTARBAH/cocktail-search#readme"
+}
