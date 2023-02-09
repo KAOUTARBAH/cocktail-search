@@ -173,32 +173,3 @@ des variables ainsi que le syle de base
     align-items: center;
     text-align: center;
   }
-
-  /**
-Style pour le bordure des cocktails
-*/
-.cocktailBordure{
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 2000px;
-    width: 100%;
-
-  }
-
-  .AfficheCocktail{
-    display: flex;
-    margin:  0 .6rem;
-    border-radius: 5px;
-    align-items: center;
-    overflow: hidden;
-    background-color: var(--darkLight);
-  }
-  
-  .AfficheCocktail .imgBordue{
-    width: 230px;
-    height: 230px;
-    align-self: stretch;
-    overflow: hidden;
-  }

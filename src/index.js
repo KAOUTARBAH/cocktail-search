@@ -1,40 +1,3 @@
-console.log("test");
-/**
- * Fonction permetand DE Ccéer la div.cocktail
- */
-function createCocktail(nom, image){
-  // on créer la  div principal
-  const root=document.createElement('div')
-  root.classList.add('AfficheCocktail')
-
-
-  //on créer la div de imgbordure
-  const imgBordue=document.createElement('div')
-  imgBordue.classList.add('imgBordue')
-  root.append(imgBordue)
-
-  //on créer l'élement img
-  const img=document.createElement('img')
-  img.setAttribute('alt', nom)
-  img.setAttribute('src', image)
-  imgBordue.append(img)
-
-  //on créer la div detail
-  const detail=document.createElement('detail')
-  detail.classList.add('detail')
-  root.append(detail)
-
-  //on créer l'élement paragraphe
-  const p=document.createElement('p')
-  //p.classList.add('p')
-  p.innerText = nom
-  detail.append(p)
-
-  //on retourne la div
-  return root
-}
-
-
 const search = document.querySelector(".barSearch button");
 // J'attache mon événement au button de search bar
 search.addEventListener("click", searchCocktail);
@@ -67,18 +30,13 @@ async function searchCocktail() {
   //je recupere la valeur de la liste drinks
   drinks = data.drinks
   
-  //je recupere le bordure pour mes cocktails
-  const cocktailBordure =document.querySelector('.cocktailBordure')
-
-  //je vide le le bordure pour mes cocktails
-  cocktailBordure.innerHTML = ''
-
+  
   //je doit boucler sur les cocktails
   for (const drink of drinks) {
-    const div = createCocktail(drink.strDrink,drink.strDrinkThumb)
+    drinkNom = drink.strDrink
+    drinkImg = drink.strDrinkThumb
     //ajouter le div dans le bordure cocktail
-    cocktailBordure.append(div)
-    console.log(drink);
+    console.log(drinkNom);
   }
 }
 
