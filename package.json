@@ -19,5 +19,6 @@
   "homepage": "https://github.com/KAOUTARBAH/cocktail-search#readme",
   "dependencies": {
     "parcel": "^2.8.3"
-  }
+  },
+  "devDependencies": {}
 }
