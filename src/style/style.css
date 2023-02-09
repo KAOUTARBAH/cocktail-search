@@ -173,7 +173,6 @@ des variables ainsi que le syle de base
     align-items: center;
     text-align: center;
   }
-
   /**
 Style pour le bordure des cocktails
 */
@@ -201,4 +200,15 @@ Style pour le bordure des cocktails
     height: 230px;
     align-self: stretch;
     overflow: hidden;
+  }
+
+  .AfficheCocktail .imgBordue img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .AfficheCocktail .detail{
+    padding: 1rem 2rem;
+    
   }
